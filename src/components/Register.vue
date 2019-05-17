@@ -57,8 +57,8 @@ export default {
   methods: {
     register() {
       console.log(this.loginForm);
-      this.loginForm.username = "123"
-      this.loginForm.password = "666"
+      this.registerForm.username = "123"
+      this.registerForm.password = "666"
       this.$router.push({ path: '/container' })
     }
   },

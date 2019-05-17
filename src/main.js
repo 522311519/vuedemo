@@ -15,9 +15,10 @@ Vue.use(VueResource)
 Vue.use(ElementUI)
 
 Mock.mockData()
-var vm = new Vue({
+new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  mounted() { window.app = this }
 })
